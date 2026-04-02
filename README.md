@@ -18,6 +18,12 @@ At a high level, CORA brings together:
 - `Alexitha` as the native reasoning model
 - a custom NPU architecture built around FPGA-based prototyping and future custom hardware
 
+## What This Repo Is
+
+This repository is the hardware and system-design home for CORA. It is focused on the appliance itself: architecture, product framing, board direction, and the physical execution model.
+
+If Axiom Lab is the umbrella and Flux/Tenet/Alexitha are the software layers, CORA is the machine those ideas are ultimately meant to inhabit.
+
 ## Why It Exists
 
 Most AI systems are assembled from layers that were never designed for formal reasoning or verifiable execution. CORA takes the opposite approach: build a system where the reasoning language, execution environment, and hardware constraints reinforce each other.
@@ -43,13 +49,13 @@ The long-term design language is a visible, brutalist appliance:
 
 ## Repository Contents
 
-This directory contains the hardware and architecture material for CORA:
+This repository contains the hardware and architecture material for CORA:
 
-- [CORA_PRD.md](/home/fawaz/Documents/Axiom/sierra/CORA_PRD.md) - product requirements and positioning
-- [SIERRA.md](/home/fawaz/Documents/Axiom/sierra/SIERRA.md) - legacy long-form hardware narrative from the original naming
-- [SIERRA_CARRIER_ARCHITECTURE.md](/home/fawaz/Documents/Axiom/sierra/SIERRA_CARRIER_ARCHITECTURE.md) - carrier-board and system architecture notes
-- [SIERRA_ARCHITECTURAL_DIAGRAMS.md](/home/fawaz/Documents/Axiom/sierra/SIERRA_ARCHITECTURAL_DIAGRAMS.md) - diagrams and logic blueprints
-- [SIERRA_MATH.md](/home/fawaz/Documents/Axiom/sierra/SIERRA_MATH.md) - engineering calculations and constraints
+- [CORA_PRD.md](CORA_PRD.md) - product requirements and positioning
+- [SIERRA.md](SIERRA.md) - legacy long-form hardware narrative from the original naming
+- [SIERRA_CARRIER_ARCHITECTURE.md](SIERRA_CARRIER_ARCHITECTURE.md) - carrier-board and system architecture notes
+- [SIERRA_ARCHITECTURAL_DIAGRAMS.md](SIERRA_ARCHITECTURAL_DIAGRAMS.md) - diagrams and logic blueprints
+- [SIERRA_MATH.md](SIERRA_MATH.md) - engineering calculations and constraints
 - KiCad project files for the carrier board and related hardware work
 
 ## Position in the Axiom Stack
@@ -60,6 +66,17 @@ This directory contains the hardware and architecture material for CORA:
 | Model Layer | Alexitha | Native reasoning engine |
 | OS Layer | Axiom OS | Appliance runtime and device control |
 | Hardware Layer | CORA | Dedicated execution appliance |
+
+## Relationship To Axiom Lab
+
+CORA is a project inside the broader Axiom Lab stack, but this repo should read as a product and hardware repo first.
+
+For the broader umbrella view, see:
+
+- Axiom Lab: https://github.com/fawazishola/Axiom-Lab
+- Flux: https://github.com/fawazishola/Flux
+- Tenet: https://github.com/fawazishola/Tenet
+- Alexitha: https://github.com/fawazishola/Alexitha
 
 ## Current Status
 
