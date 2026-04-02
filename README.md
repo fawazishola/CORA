@@ -87,6 +87,7 @@ See also: [docs/design-language.md](docs/design-language.md)
 ## Key Docs
 
 - [docs/system-overview.md](docs/system-overview.md) - fast architectural orientation
+- [docs/hardware-status.md](docs/hardware-status.md) - current state of the hardware effort
 - [docs/design-language.md](docs/design-language.md) - transparent monolith concept and physical philosophy
 - [docs/why-not-gpu-cloud.md](docs/why-not-gpu-cloud.md) - the contrarian thesis behind CORA
 - [docs/migration.md](docs/migration.md) - naming and repo-structure migration notes
@@ -120,6 +121,8 @@ For the broader umbrella view, see:
 ## Current Status
 
 CORA is in active architecture and prototyping mode. The repo already contains the product framing, hardware direction, and board-design groundwork, but the project is still evolving from research hardware into a unified appliance.
+
+The hardware effort is still in ideation and team-formation mode. The direction is clear, but the full build program is still being assembled around design, hardware execution, and system integration.
 
 ## License
 
