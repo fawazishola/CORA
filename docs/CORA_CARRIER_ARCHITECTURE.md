@@ -1,14 +1,14 @@
-# SIERRA Custom SoC Architecture v1.1
+# CORA Custom SoC Architecture v1.1
 
 ## Philosophy & Design Standard
-The SIERRA PCB is NOT a generic carrier board. It is a monolithic, full-custom System-on-Chip (SoC) design built entirely from scratch. Every copper trace, memory bank, and logic gate is intentionally routed to physically manifest Axiom OS.
+The CORA PCB is NOT a generic carrier board. It is a monolithic, full-custom System-on-Chip (SoC) design built entirely from scratch. Every copper trace, memory bank, and logic gate is intentionally routed to physically manifest Axiom OS.
 *   **Aesthetic:** Matte black solder mask, exposed ENIG (gold) traces, uncompromising orthogonal routing.
 *   **Form Factor:** Designed to be mounted perfectly inside a 15mm optical-grade acrylic enclosure separated by stainless-steel standoffs.
 
 ---
 
 ## Subsystem 1: The Compute Engine (Full Custom BGA Integration)
-We are completely bypassing off-the-shelf "System-on-Modules". The brain of the NPU is a raw Zynq-7000 series chip soldered directly to the SIERRA board via a high-density Ball Grid Array (BGA) and assembled via factory reflow.
+We are completely bypassing off-the-shelf "System-on-Modules". The brain of the NPU is a raw Zynq-7000 series chip soldered directly to the CORA board via a high-density Ball Grid Array (BGA) and assembled via factory reflow.
 *   **Function:** Houses the dual-core ARM Cortex-A9 (Running the bare-metal Axiom OS Kernel) and the Artix-7 FPGA Fabric (Hardware-accelerating the Tenet rule verification).
 *   **Hardware Metric:** Requires a minimum 6-layer (or 8-layer) PCB stack-up with meticulously length-matched, impedance-controlled traces fanning out from the BGA to all peripherals.
 

@@ -1,6 +1,6 @@
-# SIERRA NPU: Architectural & Logic Blueprints
+# CORA NPU: Architectural & Logic Blueprints
 
-This document holds the core architectural logic diagrams that define the flow of the SIERRA native hardware and the Axiom OS stack.
+This document holds the core architectural logic diagrams that define the flow of the CORA native hardware and the Axiom OS stack.
 
 ## 1. The Physical Monolith Architecture
 This diagram illustrates how the hardware subsystems on the custom BGA PCB route logic from the raw silicon to the human interface.

@@ -23,12 +23,8 @@ The repo is now organized into:
 - `renders/`
 - `sim/`
 
-## Legacy Files
+## Public Naming
 
-Some filenames still use the older `SIERRA_*` prefix. That is intentional for now to avoid breaking continuity while the repo is still being cleaned up.
+Public-facing filenames in this repo now use `CORA` rather than `SIERRA`.
 
-The current approach is:
-
-- keep legacy names where they preserve history
-- make `CORA` the public-facing name in README and product framing
-- rename lower-level artifacts gradually when the structure is stable
+The historical `SIERRA` name is still referenced inside some documents where the origin story or prior naming matters, but it is no longer the default filename convention.

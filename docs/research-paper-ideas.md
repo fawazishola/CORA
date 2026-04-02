@@ -1,6 +1,6 @@
 # CORA Research Paper Ideas
 
-This document translates the existing SIERRA and CORA research direction into a clearer paper strategy.
+This document translates the existing CORA research direction, including its earlier SIERRA naming history, into a clearer paper strategy.
 
 The key argument across all three papers is the same:
 
@@ -13,7 +13,7 @@ That is the through-line. The three papers simply attack it from different resea
 | Paper | Working Focus | Best-Fit Community |
 |---|---|---|
 | Paper 1 | Hardware-enforced AI safety | AI safety, ML systems, governance-adjacent safety |
-| Paper 2 | SIERRA / CORA NPU architecture | computer architecture and accelerators |
+| Paper 2 | CORA NPU architecture | computer architecture and accelerators |
 | Paper 3 | Flux type theory | programming languages and formal methods |
 
 ## Paper 1: Hardware-Enforced AI Safety
@@ -38,7 +38,7 @@ The central claim is that unsafe behavior should be made physically impossible w
 
 ### Why This Paper Matters
 
-This is probably the most immediately publishable paper in the CORA orbit because the workshop version does not require finished hardware. The argument can already be made using Flux, Tenet, and the CORA/SIERRA architecture as the reference system.
+This is probably the most immediately publishable paper in the CORA orbit because the workshop version does not require finished hardware. The argument can already be made using Flux, Tenet, and the CORA architecture as the reference system.
 
 ### Best-Fit Venues, Ranked
 
@@ -63,7 +63,7 @@ These are my fit-based recommendations from strongest to more fallback or adjace
 - `SaTML` is a strong community fit if the paper becomes more explicitly safety-and-trustworthiness focused rather than pure ML novelty.
 - `USENIX Security` and `IEEE S&P` become more plausible if the framing shifts from "AI safety" toward "enforcement architecture" and "unbypassable execution constraints."
 
-## Paper 2: SIERRA / CORA NPU Architecture
+## Paper 2: CORA NPU Architecture
 
 ### Working Title
 
@@ -191,6 +191,6 @@ This document draws directly from the existing ideas already present in:
 - `docs/neurips_hardware_safety_paper.md` in the main Axiom repo
 - `paper_ideas.md` in the main Axiom repo
 - `docs/CORA_PRD.md`
-- `docs/SIERRA.md`
+- `docs/CORA.md`
 
 The wording here is intentionally recast for clarity, positioning, and venue strategy.

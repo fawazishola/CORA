@@ -1,5 +1,7 @@
-# SIERRA
-## Symbolic Intelligence Engine for Reasoning & Recursive Architecture
+# CORA
+## Core Operating & Reasoning Appliance
+
+Originally developed under the name SIERRA (Symbolic Intelligence Engine for Reasoning & Recursive Architecture).
 
 **An Axiom Hardware Project**
 

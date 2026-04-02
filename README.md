@@ -4,7 +4,7 @@ Core Operating & Reasoning Appliance
 
 CORA is Axiom Lab's hardware appliance for sovereign, verifiable AI computation. It combines a custom NPU architecture, Axiom OS, Flux, and Alexitha into a single air-gapped system designed for mathematical reasoning and zero-cloud execution.
 
-Originally, the project was developed under the name `SIERRA` (Symbolic Intelligence Engine for Reasoning & Recursive Architecture). That name still appears in some legacy document and hardware filenames in this repo.
+Originally, the project was developed under the name `SIERRA` (Symbolic Intelligence Engine for Reasoning & Recursive Architecture). That older name is now kept only as historical context inside a few documents.
 
 ![CORA concept sheet](renders/cora-concept-sheet-apr-2026.png)
 
@@ -93,10 +93,10 @@ See also: [docs/design-language.md](docs/design-language.md)
 - [docs/research-paper-ideas.md](docs/research-paper-ideas.md) - paper roadmap and venue strategy
 - [docs/migration.md](docs/migration.md) - naming and repo-structure migration notes
 - [docs/CORA_PRD.md](docs/CORA_PRD.md) - product requirements and positioning
-- [docs/SIERRA.md](docs/SIERRA.md) - legacy long-form narrative from the original naming
-- [docs/SIERRA_CARRIER_ARCHITECTURE.md](docs/SIERRA_CARRIER_ARCHITECTURE.md) - carrier-board and system architecture notes
-- [docs/SIERRA_ARCHITECTURAL_DIAGRAMS.md](docs/SIERRA_ARCHITECTURAL_DIAGRAMS.md) - diagrams and logic blueprints
-- [docs/SIERRA_MATH.md](docs/SIERRA_MATH.md) - engineering calculations and constraints
+- [docs/CORA.md](docs/CORA.md) - long-form hardware narrative and project framing
+- [docs/CORA_CARRIER_ARCHITECTURE.md](docs/CORA_CARRIER_ARCHITECTURE.md) - carrier-board and system architecture notes
+- [docs/CORA_ARCHITECTURAL_DIAGRAMS.md](docs/CORA_ARCHITECTURAL_DIAGRAMS.md) - diagrams and logic blueprints
+- [docs/CORA_MATH.md](docs/CORA_MATH.md) - engineering calculations and constraints
 
 ## Position in the Axiom Stack
 

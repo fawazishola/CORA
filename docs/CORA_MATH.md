@@ -1,12 +1,12 @@
-# SIERRA NPU: The Mathematical Constraints & Calculations
+# CORA NPU: The Mathematical Constraints & Calculations
 
-Designing a bare-metal System-on-Chip board requires absolute mathematical precision. Before routing copper in KiCad, the physical constraints of the board must be calculated mathematically. Here is the master list of all calculations required for the SIERRA project:
+Designing a bare-metal System-on-Chip board requires absolute mathematical precision. Before routing copper in KiCad, the physical constraints of the board must be calculated mathematically. Here is the master list of all calculations required for the CORA project:
 
 ## 1. Neurosymbolic Token Throughput (Memory Bandwidth)
 The fundamental bottleneck of Large Language Models on edge hardware is not compute (FLOPs), but memory bandwidth. Every token generation requires the entire model weight to be read from RAM.
 *   **Target Calculation:** Tokens per second ($$T_{speed}$$)
 *   **Formula:** $$T_{speed} = \frac{\text{Memory Bandwidth (GB/s)}}{\text{Quantized Model Size (GB)}}$$
-*   **SIERRA Variables:**
+*   **CORA Variables:**
     *   Alexitha 7B (4-bit quantization) $\approx$ 3.5 GB
     *   Target Bus: DDR4 32-bit width at 2400MT/s $\approx$ 9.6 GB/s
     *   Theoretical raw read limit: ~2.7 iterations/sec.
