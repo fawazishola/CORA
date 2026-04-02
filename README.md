@@ -6,6 +6,10 @@ CORA is Axiom Lab's hardware appliance for sovereign, verifiable AI computation.
 
 Originally, the project was developed under the name `SIERRA` (Symbolic Intelligence Engine for Reasoning & Recursive Architecture). That name still appears in legacy architecture documents and board files across this directory.
 
+![CORA concept sheet](images/cora-concept-sheet-apr-2026.png)
+
+Concept render showing the enclosure direction, board layout language, and multi-view hardware presentation for CORA.
+
 ## What CORA Is
 
 CORA is not a generic AI workstation and it is not a rented GPU endpoint in a box. It is intended as a tightly integrated reasoning appliance where the software stack and the hardware execution model are designed together.
