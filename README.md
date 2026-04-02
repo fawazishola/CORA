@@ -90,6 +90,7 @@ See also: [docs/design-language.md](docs/design-language.md)
 - [docs/hardware-status.md](docs/hardware-status.md) - current state of the hardware effort
 - [docs/design-language.md](docs/design-language.md) - transparent monolith concept and physical philosophy
 - [docs/why-not-gpu-cloud.md](docs/why-not-gpu-cloud.md) - the contrarian thesis behind CORA
+- [docs/research-paper-ideas.md](docs/research-paper-ideas.md) - paper roadmap and venue strategy
 - [docs/migration.md](docs/migration.md) - naming and repo-structure migration notes
 - [docs/CORA_PRD.md](docs/CORA_PRD.md) - product requirements and positioning
 - [docs/SIERRA.md](docs/SIERRA.md) - legacy long-form narrative from the original naming
