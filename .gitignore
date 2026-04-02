@@ -1,0 +1,17 @@
+.DS_Store
+Thumbs.db
+
+*.swp
+*.swo
+*~
+
+*.tmp
+*.temp
+*.bak
+
+hardware/*.kicad_prl
+hardware/*.kicad_bak
+hardware/*.kicad_sch-bak
+hardware/*-backups/
+hardware/*.lck
+hardware/~*.lck

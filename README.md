@@ -4,9 +4,9 @@ Core Operating & Reasoning Appliance
 
 CORA is Axiom Lab's hardware appliance for sovereign, verifiable AI computation. It combines a custom NPU architecture, Axiom OS, Flux, and Alexitha into a single air-gapped system designed for mathematical reasoning and zero-cloud execution.
 
-Originally, the project was developed under the name `SIERRA` (Symbolic Intelligence Engine for Reasoning & Recursive Architecture). That name still appears in legacy architecture documents and board files across this directory.
+Originally, the project was developed under the name `SIERRA` (Symbolic Intelligence Engine for Reasoning & Recursive Architecture). That name still appears in some legacy document and hardware filenames in this repo.
 
-![CORA concept sheet](images/cora-concept-sheet-apr-2026.png)
+![CORA concept sheet](renders/cora-concept-sheet-apr-2026.png)
 
 Concept render showing the enclosure direction, board layout language, and multi-view hardware presentation for CORA.
 
@@ -22,17 +22,41 @@ At a high level, CORA brings together:
 - `Alexitha` as the native reasoning model
 - a custom NPU architecture built around FPGA-based prototyping and future custom hardware
 
+## System Overview
+
+```mermaid
+flowchart LR
+    A[Alexitha] --> B[Flux / Tenet]
+    B --> C[Axiom OS]
+    C --> D[AXI Bridge]
+    D --> E[Custom NPU]
+    E --> F[CORA Board]
+```
+
+In practice, the reasoning stack flows from model and language layers down into a dedicated execution path:
+
+- `Alexitha` produces reasoning workloads
+- `Flux` and `Tenet` structure, constrain, and dispatch computation
+- `Axiom OS` orchestrates runtime execution
+- the `AXI bridge` moves data between software and programmable logic
+- the `NPU` executes the math-heavy path
+- the `CORA board` is the physical appliance that houses the system
+
+See also: [docs/system-overview.md](docs/system-overview.md)
+
 ## What This Repo Is
 
-This repository is the hardware and system-design home for CORA. It is focused on the appliance itself: architecture, product framing, board direction, and the physical execution model.
+This repository is the hardware and system-design home for CORA. It is focused on the appliance itself: architecture, product framing, board direction, physical design language, and the execution model that ties software to hardware.
 
-If Axiom Lab is the umbrella and Flux/Tenet/Alexitha are the software layers, CORA is the machine those ideas are ultimately meant to inhabit.
+If Axiom Lab is the umbrella and Flux, Tenet, and Alexitha are the software layers, CORA is the machine those ideas are ultimately meant to inhabit.
 
 ## Why It Exists
 
 Most AI systems are assembled from layers that were never designed for formal reasoning or verifiable execution. CORA takes the opposite approach: build a system where the reasoning language, execution environment, and hardware constraints reinforce each other.
 
 The goal is not just speed. The goal is control, inspectability, and a stack whose behavior can be reasoned about from the software layer down to the silicon.
+
+See also: [docs/why-not-gpu-cloud.md](docs/why-not-gpu-cloud.md)
 
 ## Hardware Direction
 
@@ -51,16 +75,26 @@ The long-term design language is a visible, brutalist appliance:
 - dedicated HDMI terminal output
 - minimal external I/O
 
-## Repository Contents
+See also: [docs/design-language.md](docs/design-language.md)
 
-This repository contains the hardware and architecture material for CORA:
+## Repository Structure
 
-- [CORA_PRD.md](CORA_PRD.md) - product requirements and positioning
-- [SIERRA.md](SIERRA.md) - legacy long-form hardware narrative from the original naming
-- [SIERRA_CARRIER_ARCHITECTURE.md](SIERRA_CARRIER_ARCHITECTURE.md) - carrier-board and system architecture notes
-- [SIERRA_ARCHITECTURAL_DIAGRAMS.md](SIERRA_ARCHITECTURAL_DIAGRAMS.md) - diagrams and logic blueprints
-- [SIERRA_MATH.md](SIERRA_MATH.md) - engineering calculations and constraints
-- KiCad project files for the carrier board and related hardware work
+- `docs/` - product framing, architecture notes, design language, and legacy documentation
+- `hardware/` - KiCad board files and hardware artifacts
+- `renders/` - concept imagery and visual presentation assets
+- `sim/` - simulation and demo artifacts
+
+## Key Docs
+
+- [docs/system-overview.md](docs/system-overview.md) - fast architectural orientation
+- [docs/design-language.md](docs/design-language.md) - transparent monolith concept and physical philosophy
+- [docs/why-not-gpu-cloud.md](docs/why-not-gpu-cloud.md) - the contrarian thesis behind CORA
+- [docs/migration.md](docs/migration.md) - naming and repo-structure migration notes
+- [docs/CORA_PRD.md](docs/CORA_PRD.md) - product requirements and positioning
+- [docs/SIERRA.md](docs/SIERRA.md) - legacy long-form narrative from the original naming
+- [docs/SIERRA_CARRIER_ARCHITECTURE.md](docs/SIERRA_CARRIER_ARCHITECTURE.md) - carrier-board and system architecture notes
+- [docs/SIERRA_ARCHITECTURAL_DIAGRAMS.md](docs/SIERRA_ARCHITECTURAL_DIAGRAMS.md) - diagrams and logic blueprints
+- [docs/SIERRA_MATH.md](docs/SIERRA_MATH.md) - engineering calculations and constraints
 
 ## Position in the Axiom Stack
 
@@ -69,6 +103,7 @@ This repository contains the hardware and architecture material for CORA:
 | Application Logic | Flux / Tenet | Structured reasoning and verified computation |
 | Model Layer | Alexitha | Native reasoning engine |
 | OS Layer | Axiom OS | Appliance runtime and device control |
+| Interconnect | AXI Bridge | Software-to-hardware data path |
 | Hardware Layer | CORA | Dedicated execution appliance |
 
 ## Relationship To Axiom Lab
@@ -86,7 +121,6 @@ For the broader umbrella view, see:
 
 CORA is in active architecture and prototyping mode. The repo already contains the product framing, hardware direction, and board-design groundwork, but the project is still evolving from research hardware into a unified appliance.
 
-## Notes
+## License
 
-- When you see `SIERRA` in filenames, read it as historical naming unless the file is explicitly about the older branding.
-- If you want the naming fully normalized later, we can do a second pass across the `sierra/` directory and update legacy docs more broadly.
+MIT. See [LICENSE](LICENSE).
