@@ -89,7 +89,9 @@ See also: [docs/design-language.md](docs/design-language.md)
 - [docs/system-overview.md](docs/system-overview.md) - fast architectural orientation
 - [docs/hardware-status.md](docs/hardware-status.md) - current state of the hardware effort
 - [docs/pcb-design.md](docs/pcb-design.md) - PCB design direction, components, and KiCad workflow
+- [docs/enclosure-cad.md](docs/enclosure-cad.md) - 3D CAD direction, materials, dimensions, and thermal concerns
 - [docs/design-language.md](docs/design-language.md) - transparent monolith concept and physical philosophy
+- [docs/process-overview.md](docs/process-overview.md) - high-level phase map for the full CORA build effort
 - [docs/why-not-gpu-cloud.md](docs/why-not-gpu-cloud.md) - the contrarian thesis behind CORA
 - [docs/research-paper-ideas.md](docs/research-paper-ideas.md) - paper roadmap and venue strategy
 - [docs/migration.md](docs/migration.md) - naming and repo-structure migration notes
