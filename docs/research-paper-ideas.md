@@ -1,6 +1,6 @@
 # CORA Research Paper Ideas
 
-This document translates the existing CORA research direction, including its earlier SIERRA naming history, into a clearer paper strategy.
+This document translates the existing CORA research direction into a clearer paper strategy.
 
 The key argument across all three papers is the same:
 
@@ -32,7 +32,7 @@ In the Axiom/CORA framing, that means:
 
 - `Flux` enforces semantic and type-level constraints at compile time
 - `Tenet` enforces logical and runtime constraints below the application layer
-- `SIERRA/CORA` enforces execution-level admissibility so only verified instruction paths reach the NPU
+- `CORA` enforces execution-level admissibility so only verified instruction paths reach the NPU
 
 The central claim is that unsafe behavior should be made physically impossible where possible, not merely statistically less likely.
 
@@ -66,10 +66,6 @@ These are my fit-based recommendations from strongest to more fallback or adjace
 ## Paper 2: CORA NPU Architecture
 
 ### Working Title
-
-**SIERRA: A Custom Neural Processing Unit Co-Designed with a Formally Constrained AI Reasoning Language**
-
-If the public naming matters more later, this can become:
 
 **CORA: A Neural Processing Appliance Co-Designed with a Formally Constrained AI Reasoning Stack**
 

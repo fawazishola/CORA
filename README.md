@@ -4,7 +4,7 @@ Core Operating & Reasoning Appliance
 
 CORA is Axiom Lab's hardware appliance for sovereign, verifiable AI computation. It combines a custom NPU architecture, Axiom OS, Flux, and Alexitha into a single air-gapped system designed for mathematical reasoning and zero-cloud execution.
 
-Originally, the project was developed under the name `SIERRA` (Symbolic Intelligence Engine for Reasoning & Recursive Architecture). That older name is now kept only as historical context inside a few documents.
+CORA is the hardware and silicon home for the Axiom stack.
 
 ![CORA concept sheet](renders/cora-concept-sheet-apr-2026.png)
 

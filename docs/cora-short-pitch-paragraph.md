@@ -1,0 +1,3 @@
+# CORA Short Pitch Paragraph
+
+CORA is Axiom Lab's hardware appliance for sovereign, verifiable AI computation. It is not just a local AI box, but an attempt to turn the Axiom thesis into a machine: a reasoning appliance where language, verification, operating environment, and hardware are designed together instead of stitched together from generic parts. By making the stack physical, CORA becomes the next concrete embodiment of Axiom Lab's broader vision and the clearest reason why a $10,000 grant would matter right now. The funding would help push CORA from architecture and concept renders into a much more serious stage of design iteration, prototyping, and technical execution.

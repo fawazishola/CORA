@@ -79,7 +79,7 @@ graph LR
 
     subgraph Deterministic_Physical_Layer
         TENET[Tenet Truth Filter]
-        FPGA[SIERRA NPU Logic Gates]
+        FPGA[CORA NPU Logic Gates]
         ALEXITHA -->|Proposed Proof Output| TENET
         TENET -->|Physical Logic Check| FPGA
     end

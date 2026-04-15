@@ -20,8 +20,9 @@ The mechanical design work should be done in proper 3D CAD software rather than 
 
 Recommended options:
 
-- `Fusion 360`
-  - good for fast concept modeling, assemblies, mounting studies, and enclosure iteration
+- `Fusion`
+  - best current choice for CORA
+  - use it for concept modeling, assemblies, mounting studies, enclosure iteration, renders, and fabrication drawings
 - `FreeCAD`
   - strong open-source option if you want the workflow to stay fully local and accessible
 - `SolidWorks`
@@ -29,10 +30,34 @@ Recommended options:
 
 Recommended practical path right now:
 
-1. use `Fusion 360` or `FreeCAD` for concept iteration
+1. use `Fusion` as the primary CAD environment for concept iteration
 2. model the PCB as a reference body from the KiCad board outline
 3. build the enclosure, standoffs, clearances, and fastening logic around the board
 4. export dimensioned drawings for fabrication once the geometry is stable
+
+## Which Fusion Product / Workspace To Use
+
+`Fusion` includes multiple environments, but CORA does not need all of them.
+
+For the current phase, use:
+
+- `Design`
+  - this is the main workspace for the enclosure, assembly, standoffs, ports, and overall geometry
+- `Render`
+  - use this for hero renders, exploded-view visuals, and concept imagery
+- `Drawing`
+  - use this to generate fabrication-facing dimensioned views once the geometry is stable
+
+Do not treat these as separate products you need to master independently. For CORA V1, they are simply the three Fusion workspaces that matter.
+
+You do not need to rely on:
+
+- `Manufacture`
+  - unless you later decide to generate toolpaths directly
+- `Electronics`
+  - because the board path is already centered on `KiCad`
+- simulation-heavy modules
+  - until the mechanical design is much more mature
 
 ## CAD Scope
 

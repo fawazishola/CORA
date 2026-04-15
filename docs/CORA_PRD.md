@@ -2,7 +2,6 @@
 
 ## 1. Executive Summary
 **Product Name:** CORA (Core Operating & Reasoning Appliance)
-**Naming Note:** Originally developed under the name SIERRA (Symbolic Intelligence Engine for Reasoning & Recursive Architecture)
 **Lead Architect:** Fawaz Ishola, Founder & Research Lead, Axiom Lab
 **Date:** March 2026
 
